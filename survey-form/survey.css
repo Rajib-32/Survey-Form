@@ -1,0 +1,130 @@
+
+:root{
+  --ff-sans: "Roboto", sans-serif;
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --fs-500: 1.5rem;
+  --fs-400: 0.8rem;
+  --fs-300: 0.5rem;
+
+  --clr-neutral-900: rgb(71, 71, 71);
+  --clr-neutral-400: rgb(141, 137, 137);
+  --clr-neutral-100: white;
+
+  --clr-navyblue: rgb(41,40,72);
+  --clr-green: green;
+  --clr-offwhite: rgb(222,222,222);
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-sans);
+  line-height: 1.6;
+}
+
+body{
+  background-image: url(/survey-form/img/white-color.jpg);
+}
+
+.background-wrapper h1{
+  text-align: center; 
+  color: orangered;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+}
+
+.mainform--container{
+  max-width: 70%;
+  margin-inline: auto;
+  background-color: rgb(40,39,71);
+  color: white;
+  padding: 2em;
+  padding-bottom: 4em;
+  border-radius: 8px;
+  background-image: url(/survey-form/img/contact-us.jpg);
+}
+
+.mainform--container form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form--part1{
+  min-width: 50%;
+  vertical-align: top;
+}
+
+.form--part1 input[type="text"]{
+  width: 100%;
+  padding: 0.5em 0 0.5em 0.3em;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.form--part1 input[type="number"]{
+  width: 100%;
+  padding: 0.5em 0 0.5em 0.3em;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.form--part1 select{
+  width: 100%;
+  padding: 0.5em 0 0.5em 0.3em;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.form--part2 textarea{
+  padding: 0.3em;
+  border: 2px solid red;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.submit{
+  padding: 0.4em 1em;
+  background-color: orangered;
+  color: rgb(40,39,71);
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.3em;
+  transition: 0.15s;
+}
+
+.submit:hover{
+  background-color: grey;
+  color: blue;
+}
+
+@media(max-width: 1220px){
+  .mainform--container form{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media(max-width: 720px){
+ .mainform--container{
+   max-width: 90%;
+ }
+
+}
+
